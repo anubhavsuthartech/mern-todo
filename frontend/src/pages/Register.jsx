@@ -13,7 +13,7 @@ export default function Register({ onLogin }) {
     setLoading(true)
     setError('')
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', form)
+      const res = await axios.post('https://mern-todo-backend-tjxq.onrender.com/api/auth/register', form)
       localStorage.setItem('user', JSON.stringify(res.data.user))
       onLogin(res.data.token)
     } catch (err) {

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Dashboard.css'
 
-const API = 'http://localhost:5000/api/todos'
+const API = 'https://mern-todo-backend-tjxq.onrender.com/api/todos'
 
 export default function Dashboard({ token, onLogout }) {
   const [todos, setTodos] = useState([])
